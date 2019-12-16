@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to Canyonbryson's GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/canyonbryson/canyonbryson.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I use the [editor on GitHub](https://github.com/canyonbryson/canyonbryson.github.io/edit/master/README.md) to maintain and preview my content for my website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+View my index.html site [here](https://canyonbryson.github.io/index.html)
+
+Whenever I commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files, or will read my .html files normally. It is used for static websites only, without a server.
 
 ### Markdown
 
