@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/*add background image to cover */
+body {
+  background-image: url('https://i.ibb.co/GCHVmjR/background-beng.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fixed {
+   	position: fixed; /* Set the navbar to fixed position */
+  	bottom: 5px; /* Position at the bottom of the page */
+  	right: 5px;
+}
+/* menu details */
+ul.menu {
+	list-style-type: none;
+    margin: 0;
+ 	padding: 0;
+  	overflow: hidden;
+  	border: 0px solid #e7e7e7;
+  	background-color: #f3f3f3;
+    opacity: .95;
+    position: fixed;
+  	top: 0;
+  	width: 100%;
+    transition: .3s;
+}
+ul.menu:hover {
+	opacity: 1;
+}
+.margin-top {
+	margin-top: 80px;
+}
+li.menu {
+float: left;
+}
+.overlay {
+	z-index: 1;
+}
+/* define the text in the menu */
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .3s;
+}
+/* Change the color when hovering over a menu option */
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* Change color of the active menu option */
+li a.active {
+  color: black;
+  background-color: rgba(112, 190, 255, .95);
+}
+.transparent {
+opacity:.95;
+}
+</style>
+
+
+<body class="w3-light-grey">
+
+<!-- For top button -->
+<div id="top" style="top:-50px;"><p>will this show? NOPE!</p></div>
+
+<!-- Top menu -->
+<ul id="navbar" class="menu overlay" >
+  <li class="menu"><a class="active" href="#top">Home</a></li>
+  <li class="menu"><a href="#projects">Projects</a></li>
+  <li class="menu"><a href="#molecular">Biological Engineering</a></li>
+  <li class="menu"><a href="#about">About</a></li>
+</ul>
+
+<!-- Page Container -->
+<div class="w3-content margin-top transparent" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+        <img class = "underlay" width="100%" src="https://i.ibb.co/dDM5CGm/IMG-8061.jpg" alt="IMG-8061" border="0">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Canyon Bryson</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Biological Engineer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Logan, UT</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>canyon.bryson@aggiemail.usu.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>3853032767</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <a href="#biosynthetic"><p>Biosynthetic Engineering</p></a>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <a href="#bioprocess"><p>Bioprocess Engineering</p></a>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <a href="#biomedical"><p>Molecular Biology</p></a>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <a href="#bioenvironmental"><p>Bioenvironmental Engineering</p></a>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Coding Languages</b></p>
+          <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
+          </div>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
+          </div>
+          <p>Arduino</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Lab Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Biological Engineering Classes</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p> Click for a project overview
+          	<ul>
+              <a href="#be1"><li>E. Coli Project</li></a>
+              <a href="#PTC"><li>PTC PCR and Gel Electrophoresis</li></a>
+              <a href="#3D"><li>3-D Pen Product Design</li></a>
+              <a href="#cyborg"><li>Cyborg Plant</li></a>
+            </ul>
+         </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dr. Miller's Cellular Engineering Lab</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Current</h6>
+          <p>Volunteer lab at USU. Trained on basic molecular methods and lab skills, such as:
+            <ul>
+              <li>Lab safety, layout, documentation, and jargon</li>
+              <li>PCR and Gel Electrophoresis</li>
+              <li>Make Agar Plates and LB Media</li>
+              <li>Aliquote Antibacterial Stocks</li>
+              <li>Miniprep</li>
+              <a href="#streak"><li>Streak a plate</li></a>
+			  <li>miniPCR kit</li>
+            </ul>
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SWBEC with Dr. Simms</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - Current</h6>
+          <p>Volunteer on the <a href="#meso">Mesobiliverdin Project.</a> Currently growing biomass (green algae) to isolate a strand of cyanobacteria (LLC2) which can be converted to Mesobiliverdin, an antibiotic with medical applications.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Projects and Interests</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Motion Sensor</b></h5>
+          <p><a href="#phone" >Create</a> a motion-sensing mount for a phone or camera that swivels to face the person being recorded. It will connect to a gps watch on the person.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <p>I am currently teaching myself to code HTML, CSS, and Javascript.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>The 4:22 Project</b></h5>
+          <p>I am also an avid runner, and am training myself to hit the mile standard for the USU track team, 4 minutes and 22 seconds (Although I have no plans to join the team when I do).</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Projects page -->
+<div id="projects" class="w3-content w3-margin-top transparent" style="max-width:1400px; padding:15px;">
+	<div id="be1" class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects Description</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>E. Coli Transformation <i class="fa fa-star"></i> Protein Isolation <i class="fa fa-star"></i> Tensile Testing</b></h5>
+          <p><img src="https://i.ibb.co/Qmj6RvX/IMG-1547.jpg" alt="Bioreactor" height="250" border="0">
+          <img src="https://i.ibb.co/nn1JSkg/Bioreactor.jpg" alt="Bioreactor" height="250" border="0">
+          <img src="https://i.ibb.co/qxChFyz/IMG-1627.jpg" alt="IMG-1627" height="250" border="0">
+          <img src="https://i.ibb.co/k4hJcB4/IMG-1635.jpg" alt="IMG-1635" height="250" border="0"></p>
+          <p>We first used chemical competence to transform E. Coli with an orange flourescent protein and ampicillin resistance. We then grew the colonies on agar plates. Then, we cultured the colonies in a homemade bioreacter, using a mason jar and some arduino code, as seen set up in the picture on the far left. The result produced orange bacteria that could bee seen without UV light, as seen in the second picture, jar on the far left. We then lyced the cells with transglutaminase and poured it in a dogbone mold, as seen in the third picture. We then tested its tensile strength.</p>
+          <p>In other words, we made bacteria glow orange, then let it grow, then poured it in a dogbone mold and tested it's 'stretchiness.'</p>
+          <hr>
+        </div>
+        <div id="PTC" class="w3-container">
+          <h5 class="w3-opacity"><b>"PTC" PCR <i class="fa fa-star"></i> Gel Electrophoresis</b></h5>
+          <p>We amplified our own DNA using PCR, then cut it with a restriction digest, and analyzed through Gel Electrophoresis to determine if we contained the gene to taste PTC.</p>
+          <hr>
+        </div>
+        <div id="3D" class="w3-container">
+          <h5 class="w3-opacity"><b>3D Pen Architectural Design</b></h5>
+          <img src="https://i.ibb.co/xCqNtgW/IMG-1698.jpg" alt="IMG-1698" height = "250" border="0">
+          <img src="https://i.ibb.co/X5yYfSW/IMG-1700.jpg" alt="IMG-1700" height = "250" border="0">
+          <p>Designed and made 2 structures using a 3D pen. The first was a simple rectangle, and the second had 2 pencil-sized holes. As this is to recreate the idea of creating a durable biomaterial, the 2 holes could represent space for veins or arteries. We then tested its tensile strength, as seen in both pictures.</p>
+          <hr>
+        </div>
+        <div id="cyborg" class="w3-container">
+          <h5 class="w3-opacity"><b>Cyborg Plant</b></h5>
+		  <img src="https://i.ibb.co/dbYjB9d/cyborg.jpg" alt="cyborg" border="0" Height="250">
+          <p>Wired a plant (<i>Mimosa pudica</i>) to an arduino to send an electrical pulse through the plant, causing the plant's leaves to retract. This lab served as an introduction to biorobotics.</p><br>
+        </div>
+        <div id="streak" class="w3-container">
+          <h5 class="w3-opacity"><b>Streaking E. Coli</b></h5>
+          <img src="https://i.ibb.co/X7SNXFv/20191126-125009.jpg" height = "250" alt="20191126-125009" border="0">
+          <p>From a glycerol stock, I streaked E. Coli with the OFP Plasmid with AMP resistance. If accepted, this would allow the E. Coli to glow orange and survive in ampicillin. However, I streaked the E. Coli on a regular LB Plate with no ampicillin. Thus, the E. Coli had no reason to accept the plasmid, as they could live without it, they choose not to expend the unnecessary effort. Normally, they would need the AMP resistance to survive in a plate with ampicillin, so they would take the plasmid, resulting in them also taking the orange protein gene.</p>
+         <hr>
+        </div>
+        <div class="w3-container">
+          <h5 id="meso" class="w3-opacity"><b>Mesobiliverdin Project</b></h5>
+          <img src="https://i.ibb.co/VDTBkmn/20191102-135229.jpg" height= "250" alt="20191102-135229" border="0">
+          <p>Currently growing a strand of cyanobacteria, LLC2, in suspension (as seen in the first picture), to be harvested and converted into mesobiliverdin, an antioxidant with medical applications. Planning on scaling up production through the use of RABRs.</p>
+          <hr>
+        </div>
+        <div id="phone" class="w3-container">
+          <h5 class="w3-opacity"><b>Motion Sensor</b></h5>
+          <img src="https://i.ibb.co/3RKgSY8/20191116-145808.jpg" height = "250" alt="20191116-145808" border="0">
+          <p>Currently designing and building a phone/camera mount that will swivel to face the person being recorded. It will consist of the mount with a step motor and receiver. The person will carry a gps and transmitter. Eventually, the mount will be able to connect to a gps watch. For now, another arduino, as seen in the picture.</p>
+          <hr>
+        </div>
+      </div>
+</div>
+
+<!-- Molecular Biology Page -->
+<div id="molecular" class="w3-content w3-margin-top transparent" style="max-width:1400px; padding:15px;">
+	<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Biological Engineering</h2>
+        <div id="biosynthetic" class="w3-container">
+          <h5 class="w3-opacity"><b>Biosynthetic Engineering</b></h5>
+          <p>Basically, biosynthetic engineering is synthesizing natural or biological products, through methods such as genetic engineering. For example, the <a href="be1">E. Coli Project</a> in my BENG 1000 class. We transformed E. Coli with an orange flourescent protein and AMP resistance, then grew the E. Coli on an agar plate with ampicillin, so the bacteria had to use the gene or die. Basically, if you want bacteria to do anything, you have to threaten to kill it first. Survival of the fittest.</p>
+          <p>This process involves the introduction of a plasmid into the bacterial cell. A plasmid is a small, circular piece of DNA. The plasmid contains a promotor sequence, to start the transcription (gene expression) process. Then it contains the desired gene, from which the desire protein will be translated. Then followed by a termination sequence to end the transcription process. The plasmid also contains an antibiotic resistance gene.</p>
+          <p>One application of biosynthetic engineering is in recombinant DNA technology. Because DNA uses a universal code, the same sequence can be read and understood by any organism. For example, the human gene for insulin production can be given to E. Coli, which will then produce insulin. This has extensive applications for personalized healthcare.</p>
+          <hr>
+        </div>
+        
+        <div id="bioprocess" class="w3-container">
+          <h5 class="w3-opacity"><b>Bioprocess Engineering</b></h5>
+          <p>This involves the production and manufacturing of biological products. For example, in the <a href="be1">E. Coli Project</a> in my BENG 1000 class, after we synthesized our bacteria with the desired protein, we built bioreactors to facilitate bacterial growth in suspension, producing the bacteria large-scale.</p>
+          <p>The first step in biological engineering is to be able to synthesize the desired product through biosynthetic engineering. However, for it to have an impact, it must be produced in large scale. For example, if you synthesized a new medicine, it must be cheap to produce on a large scale, otherwise no one would feasibly have access to the medicine.</p>
+          <p>Current research include how cell therapy and regenerative medicine can impact burn victims through stem cell differentiation and skin cell transplantation. Further advances in bioprocess engineering and adnvanced biomanufacturing will allow the implementation of many new therapies.</p>
+          <hr>
+        </div>
+        <div id="biomedical" class="w3-container">
+          <h5 class="w3-opacity"><b>Biomedical Engineering</b></h5>
+          <p>Biomedical engineering involves prosthetics, medical devices, drug delivery, wearable health monitors, synthesizing tissue, bone, or organs with biomaterials, biodevices, and anything else in biological engineering with medical applications.</p>
+          <p>In the <a href="be1">E. Coli Project</a>, we created a dogbone mold from lysed E. Coli cells with orange flourescent proteins, then tested it's tensile strength. This served as an introduction to the possibility of synthesizing tissue with the desired proteins. This could potentially be 3-d "bioprinted" one day into a durable structure compatible with the human body.</p>
+          <p>Current research includes a microelectronic implant in the eye, which has shown to give a blind person rudimentary vision. Current versions allow for basic navigation and even letter reading, while future models will further improve vision for face recognition and more.</p>
+          <hr>
+        </div>
+        <div id="bioenvironmental" class="w3-container">
+          <h5 class="w3-opacity"><b>Bioenvironmental Engineering</b></h5>
+          <p>Bioenvironmental engineering involves the treatment of waste for renewed energy, preserving energy and reducing energy consumption, and producing alternate forms of energy. This can include bioagriculture, or engineering plants to maximize output and food quality.</p>
+          <p>Current research includes forming a new way to turn methane into electricity. Microbial fuel cells use bacteria to convert methane into electricity. These bacteria consume the methane, leaving extra electrons that can be harvested and used for electricity.</p>
+          <p>I am working with Dr. Simms and a few other students on the <a href="#meso">Mesobiliverdin Project</a> to grow and harvest green algae, which contain cyanobacteria (often harmful), but this specific strand can be converted into mesobiliverdin, an antioxidant with medical applications.</p>
+        </div>
+      </div>
+</div>
+
+<!-- About me Page -->
+<div id="about" class="w3-content w3-margin-top transparent" style="max-width:1400px; padding:15px;">
+	<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About me</h2>
+        <div id="biosynthetic" class="w3-container">
+          <h5 class="w3-opacity"><b>My Background <i class="fa fa-star"></i> My Journey</b></h5>
+          <h6>How did I get interested in Biological Engineering?</h6>
+		  <p>I grew up in Layton Utah. I have always enjoyed math and physics, and my first at-home project was to build a double salmon ladder.</p>
+			<iframe src="https://player.vimeo.com/video/376574803" width="320" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+		  <p>My second project was to accomplish magnetic levitation using bismuth crystals. The result looked very similar to this video, producing what is almost perpetual motion.</p>
+		    <iframe src="https://player.vimeo.com/video/376574798" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			<p>I got intrigued by prosthetics. As I studied the topic, what drew my attention the most were the concepts of biomaterials and biodevices. My dream career is to be invovled in the research and development of cutting-edge technologies to improve human health.</p>
+		  <hr>
+         </div>
+    </div>     
+</div>
+
+<!-- top button in bottom right-->
+<a href="#top"><img src="https://i.ibb.co/RyHdbWS/arrow.png" class="fixed" alt="arrow" border="0" height="25" style="opacity:0.4;filter:alpha(opacity=40);"></a>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
