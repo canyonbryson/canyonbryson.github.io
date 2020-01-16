@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/*add background image to cover */
+body {
+  background-image: url('https://i.ibb.co/GCHVmjR/background-beng.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fixed {
+   	position: fixed; /* Set the navbar to fixed position */
+  	bottom: 5px; /* Position at the bottom of the page */
+  	right: 5px;
+}
+/* menu details */
+ul.menu {
+	list-style-type: none;
+    margin: 0;
+ 	padding: 0;
+  	overflow: hidden;
+  	border: 0px solid #e7e7e7;
+  	background-color: #f3f3f3;
+    opacity: .95;
+    position: fixed;
+  	top: 0;
+  	width: 100%;
+    transition: .3s;
+}
+ul.menu:hover {
+	opacity: 1;
+}
+.margin-top {
+	margin-top: 80px;
+}
+li.menu {
+float: left;
+}
+.overlay {
+	z-index: 1;
+}
+/* define the text in the menu */
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .3s;
+}
+/* Change the color when hovering over a menu option */
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* Change color of the active menu option */
+li a.active {
+  color: black;
+  background-color: rgba(112, 190, 255, .95);
+}
+.transparent {
+opacity:.95;
+}
+</style>
+
+
+<body class="w3-light-grey">
+
+<!-- For top button -->
+<div id="top" style="top:-50px;"><p>will this show? NOPE!</p></div>
+
+<!-- Top menu -->
+<ul id="navbar" class="menu overlay" >
+  <li class="menu"><a class="active" href="#top">Home</a></li>
+  <li class="menu"><a href="#projects">Projects</a></li>
+  <li class="menu"><a href="#molecular">Biological Engineering</a></li>
+  <li class="menu"><a href="#about">About</a></li>
+  <li class="menu"><a href="#minpcr">MiniPCR</a></li>
+</ul>
+
+<!-- Page Container -->
+<div class="w3-content margin-top transparent" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+    
+    <!--Main Section-->
+    <div id="Mini" class="w3-content w3-margin-top transparent" style="max-width:1400px; padding:15px;">
+	<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>MiniPCR Project</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>DNA Extraction <i class="fa fa-star"></i> PCR <i class="fa fa-star"></i> Gel Electrophoresis</b></h5>
+          <p>The objective: to simplify a MiniPCR kit, basically a lab experiment in a box, that can be rented by local schools to be performed by students.</p>
+          <hr>
+        </div>
+        </div>
+       </div>
+  </div>
+
+</div>
+
+</body>
+
+</html>
