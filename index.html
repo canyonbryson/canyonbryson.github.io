@@ -6,70 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-
-/*add background image to cover */
-body {
-  background-image: url('https://i.ibb.co/GCHVmjR/background-beng.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.fixed {
-   	position: fixed; /* Set the navbar to fixed position */
-  	bottom: 5px; /* Position at the bottom of the page */
-  	right: 5px;
-}
-/* menu details */
-ul.menu {
-	list-style-type: none;
-    margin: 0;
- 	padding: 0;
-  	overflow: hidden;
-  	border: 0px solid #e7e7e7;
-  	background-color: #f3f3f3;
-    opacity: .95;
-    position: fixed;
-  	top: 0;
-  	width: 100%;
-    transition: .3s;
-}
-ul.menu:hover {
-	opacity: 1;
-}
-.margin-top {
-	margin-top: 80px;
-}
-li.menu {
-float: left;
-}
-.overlay {
-	z-index: 1;
-}
-/* define the text in the menu */
-li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: .3s;
-}
-/* Change the color when hovering over a menu option */
-li a:hover:not(.active) {
-  background-color: #ddd;
-}
-/* Change color of the active menu option */
-li a.active {
-  color: black;
-  background-color: rgba(112, 190, 255, .95);
-}
-.transparent {
-opacity:.95;
-}
-</style>
-
+<link rel="stylesheet" href="main.css">
 
 <body class="w3-light-grey">
 
@@ -131,17 +68,17 @@ opacity:.95;
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Coding Languages</b></p>
-          <p>HTML</p>
+          <p>HTML/CSS</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
           </div>
-          <p>C++</p>
+          <p>Javascript</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
           </div>
           <p>Python</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
           <br>
         </div>
@@ -200,7 +137,9 @@ opacity:.95;
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <p>I am currently teaching myself to code HTML, Python, and Javascript.</p>
+          <p>I am currently teaching myself to code HTML, Python, and Javascript, as well the web framework flask.</p>
+		<p id="time"></p>
+		<p>View my flask website <a href="canyonbryson.github.io/rpi_chemostat">here</a> (co-author)</p>
           <hr>
         </div>
         <div class="w3-container">
@@ -336,18 +275,7 @@ opacity:.95;
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
