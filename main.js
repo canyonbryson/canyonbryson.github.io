@@ -16,6 +16,7 @@ function startTime() {
 	    h = checkTime(today.getHours()),
 	    m = checkTime(today.getMinutes()),
 	    s = checkTime(today.getSeconds());
+	    if (h>12){ h -=12; }
 	document.getElementById('time').innerHTML = "Current Time, using Javascript: " + h + ":" + m + ":" + s;	
 }
 setInterval(startTime, 1000);
